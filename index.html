@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+         <!-- Header -->
+         <header>
+            <h1>Job Application Form</h1>
+            <p>Please Fill Out the Form Below to Submit Your Job Application!</p>
+        </header> 
+        <!-- Form Requirements -->
+        <form action="">
+            <div class="form_container">
+                <!-- Main -->
+                <main>
+                    <div class="form_control">
+                    <!-- Contact Info -->
+                    <label for="first_name">First Name
+                        <input type="text" id="first_name" name="name" placeholder="First Name" required>
+                    </label>
+                    <label for="last_name">Last Name
+                        <input type="text" id="last_name" name="name" placeholder="Last Name" required>
+                    </label>
+                    <label for="email">Email           
+                        <input type="email" id="email" name="email" placeholder="ex:hope@example.com" required>
+                    </label>
+                    <label for="phone_number">Phone Number
+                        <input type="text" id="phone_number" name="phone_number" placeholder="(000) 000-0000" required>
+                    </label>
+                    <!-- What position are you applying for? -->
+                    <label for="select_title">Applied Position
+                    <select name="select_title" id="select_title">
+                            <option value=" ">--Select--</option>
+                            <option value="Frontend Developer">Frontend Developer</option>
+                            <option value="Backend Developer">Backend Developer</option>
+                            <option value="Full Stack Developer">Full Stack Developer</option>
+                            <option value="Machine Learning">Machine Learning</option>
+                            <option value="UI/UX Designer">UI/UX Designer</option>
+                            <option value="Intership">Intership</option>
+                            <option value="IT Manager">IT Manager</option>
+                            <option value="Team Leader">Team Leader</option>
+                        </select></label> 
+                    <!-- Date -->
+                    <label for="start_date">Earliest Possible Start Date
+                        <input type="date" id="start_date" name="date" placeholder="MM-DD-YYYY" required>
+                    </label>
+                    </div>
+                    <!-- Employee Status -->
+                    <h3>What is your current employee status?</h3>
+                    <div class="form_control emp" > 
+                    <label for="employee">
+                        <input type="radio" id="employee" value="employee" name="emp">Employed
+                    </label>
+                    <label for="self_employed">
+                        <input type="radio" value="self_employed" id="self_employed" name="emp">Self-Employed
+                    </label>
+                    <label for="unemployed">
+                        <input type="radio" value="unemployed" id="unemployed" name="emp">Unemployed
+                    </label>
+                    <label for="student">
+                        <input type="radio" value="student" id="student" name="emp">Student
+                    </label>
+                    </div>
+                    <div class="form_control">
+                    <!-- Resume -->
+                    <label for="">Please provide your resume link
+                        <input type="text" id="resume" name="link" placeholder="https://www.example.com/">
+                    </label>
+                    <label for="">Please upload your resume
+                        <!-- <input type="text" placeholder="Resume" class="resume" readonly>-->
+                            <input class="file" type="file" id="upload" name="upload">                    
+                    </label>
+                    </div>
+                    <!-- Reference Info-->
+                    <h3>Do you have references?(Optional)</h3>
+                    <div class="form_control">
+                    <label for="first_name">First Name<input type="text" id="first_name" name="name" placeholder="First Name"></label>
+                    <label for="last_name">Last Name<input type="text" id="last_name" name="name" placeholder="Last Name"></label>
+                    <label for="email">Reference Email<input type="email" id="email" name="email" placeholder="ex:hope@example.com"></label>
+                    <label for="phone_number">Reference Phone Number<input type="text" id="phone_number" name="phone_number" placeholder="(000) 000-0000"></label>
+                    </div>
+                    <!-- Cover Letter -->
+                    <div class="cover">
+                    <label for="cover_letter">Cover Letter
+                        <textarea name="cover_letter" id="cover_letter" cols="30" rows="10" placeholder="Please do not exceed 200 words."></textarea>
+                    </label>
+                </div>
+            </main>
+                <!-- Footer -->
+                <footer>
+                    <div class="btn">
+                    <!-- Submit Button -->
+                    <button>Apply</button>
+                    </div>
+                </footer>
+             </div>
+            </form>
+    </div>
+</body>
+</html>
